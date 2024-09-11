@@ -11,7 +11,7 @@ export function CoursesScreen(){
     const goToCourse = (courseInfo) => { 
         navigator("/CourseInfo", { state: {courseInfo} });
     };
-
+    
     return (
         <Container className="mt-4">
             <NavBarPropio />
@@ -23,10 +23,7 @@ export function CoursesScreen(){
                             {
                                 title: course.title,
                                 description: course.description, 
-                                themes: [
-                                    "Item a",
-                                    "Item b"
-                                ]
+                                themes: course.themes
                             }
                         )} key={index} className="mb-4 cursor-pointer">
                             <Card.Body className="mb-4 cursor-pointer">

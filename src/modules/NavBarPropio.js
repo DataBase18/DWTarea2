@@ -14,8 +14,26 @@ export function NavBarPropio(){
           <Nav.Link as={Link} to="/">Inicio </Nav.Link>
           <NavigationComponent courses={
             [
-              { title: 'Desarrollo Web', description: 'Un curso integral que cubre los fundamentos del desarrollo web, incluyendo HTML, CSS y JavaScript, con un enfoque especial en la creación de aplicaciones interactivas utilizando React.' },
-              { title: 'Cálculo II', description: 'Un curso avanzado de cálculo que profundiza en técnicas como integrales múltiples, series infinitas y ecuaciones diferenciales, con aplicaciones en ciencias e ingeniería.' }
+              { 
+                title: 'Desarrollo Web', 
+                description: 'Un curso integral que cubre los fundamentos del desarrollo web, incluyendo HTML, CSS y JavaScript, con un enfoque especial en la creación de aplicaciones interactivas utilizando React.',
+                themes: [
+                  "Uso de JS",
+                  "Uso de React",
+                  "Implementación de Bootsrap React"
+                ]
+              },
+              { 
+                title: 'Cálculo II', 
+                description: 'Un curso avanzado de cálculo que profundiza en técnicas como integrales múltiples, series infinitas y ecuaciones diferenciales, con aplicaciones en ciencias e ingeniería.',
+                themes: [
+                  "Limites",
+                  "Derivadas",
+                  "Integrales",
+                  "Continuidad",
+                  "Solidos de revolución"
+                ]
+              }
             ]            
           }></NavigationComponent>
           <Nav.Link href="#home">Contacto </Nav.Link> 
